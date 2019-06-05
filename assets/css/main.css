@@ -3245,6 +3245,10 @@ input, textarea {
 .xl-left-padding {
   padding-left: 100px; }
 
+.section-padding {
+  padding-top: 140px;
+  padding-bottom: 140px; }
+
 /* image or icon sizes */
 .icon-20 {
   width: 20px;

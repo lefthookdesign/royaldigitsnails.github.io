@@ -31,17 +31,39 @@
 
 <div id="landing-hero" class="full-width full-height bg-image" style="background-image: url(/assets/images/bg-mani.jpg)"> 
     <div class="row full-width full-height dark-transparent-gradient">
+        <div id="header" class="nav full-width centered-text">
+            <div class="sm-max-width row">
+                <div class="sm inline nav-link"><a href="#services">Services</a></div>
+                <div class="sm inline nav-link"><a href="#appointments">Appointments</a></div>
+                <div class="sm inline nav-link"><a href="#contact">Contact</a></div>
+            </div>
+        </div>
         <div class="row max-width full-height center-xs middle-xs white-color">
             <div class="col-xs-12 col-sm-12 sm-max-width">
-                <img class="full-width" style="min-width: 260px; max-width: 600px;" src="/assets/images/logo-icon-white.png"/>
+                <img class="full-width" style="max-width: 200px;" src="/assets/images/logo-icon-white.png"/>
                 <h1 class="sm-padding  white-color">Royal Digits Nails</h1>
-                <h3 class="sm-padding white-color">Manicures, pedicures, acryclics, gel services, and more.</h3>
+                <h3 class="md-padding white-color">Manicures, pedicures, acryclics, gel services, and more.</h3>
+                <a href="https://www.fresha.com/providers/royal-digits-ulgwgaiu">
+                    <button type="button" class="white-button">Book an Appointment</button>
+                </a>
             </div>
         </div>
     </div>
 </div>
-<div class="row center-xs white-bg">
-    
+<div id="services" class="row center-xs white-bg">
+    <div class="row max-width start-xs">
+
+    </div>
+</div> 
+<div id="appointments" class="row center-xs light-grey-bg">
+    <div class="row max-width start-xs">
+
+    </div>
+</div> 
+<div id="contact" class="row center-xs white-bg">
+    <div class="row max-width start-xs">
+
+    </div>
 </div> 
 <!--   
 <div class="row middle-xs center-xs full-height" style="background: #2F2A4D;">
@@ -60,6 +82,40 @@
 //    $("#nav-mobile").load("closet/header-mobile.html");
 //    $("#footer").load("/closet/footer.html");
 </script>
+<script>    
+  $(window).scroll(function() {
+    if ($(window).scrollTop() >= $('#landing-hero').outerHeight()) {
+      $("#header").addClass("scrolled");
+    } else {
+      $("#header").removeClass("scrolled");
+    }
+  });
+</script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("#header a").on('click', function(event) {
 
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
 </body>
 </doctype>

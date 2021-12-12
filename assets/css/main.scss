@@ -792,18 +792,17 @@ opacity: 1; /* Firefox */
 }
 @media only screen and (max-width: 1024px) {
     h1 {
-        font-size: 3.8em;
+      font-size: 3.8em;
       }
     h2 {
       font-size: 2em;
-        font-weight: 400;}
+  }
     h3 {
       font-size: 1.214em/*1.999em*/;
-      font-weight: 800;
     }
     h4 {
       font-size: 1.14em;
-      font-weight: 600;}
+  }
     input, textarea {
         font-size: 1.5em;
         line-height: 1.5em;

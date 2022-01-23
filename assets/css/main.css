@@ -3012,7 +3012,7 @@
 
 /* mixins */
 /* html styles */
-body {
+body, html {
   font: 100% "Raleway", "Roboto", Open Sans, Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 1em;
@@ -3026,12 +3026,12 @@ body {
   overflow-y: scroll;
   -webkit-font-smoothing: antialiased !important;
 }
-body img {
+body img, html img {
   line-height: 0;
   vertical-align: bottom;
   box-sizing: border-box;
 }
-body img::before, body img::after {
+body img::before, body img::after, html img::before, html img::after {
   clear: both;
 }
 
@@ -3147,19 +3147,25 @@ h5 {
   font-weight: 400;
 }
 
-body, p {
+body {
   font-size: 18px;
   line-height: 1.5;
   padding: 0;
   font-family: "Source Serif Pro", serif;
   letter-spacing: 0.01em;
   font-weight: 400;
-  color: #555558;
+  color: #141226;
   margin: 0;
+}
+
+p {
+  padding: 10px 0;
+  color: #555558;
 }
 
 p.large {
   font-size: 22px;
+  font-family: "Roboto", sans-serif;
 }
 
 .sm-text {

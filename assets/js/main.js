@@ -1,3 +1,12 @@
+function initPage() {
+  $(window).scroll(function() {
+    if ($(window).scrollTop() >= $('#landing-hero').outerHeight() - 100) {
+      $("#header").addClass("scrolled");
+    } else {
+      $("#header").removeClass("scrolled");
+    }
+  });
+}
 $(document).ready(function() {
 
     /* Every time the window is scrolled ... */

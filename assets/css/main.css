@@ -41,11 +41,11 @@
 }
 
 .grey-color {
-  color: #79797c;
+  color: #555558;
 }
 
 .grey-bg {
-  background: #79797c;
+  background: #555558;
 }
 
 .dark-color {
@@ -3000,7 +3000,7 @@
   font-size: 14px;
   line-height: 20px;
   text-align: center;
-  color: #79797c;
+  color: #555558;
   opacity: 0.25;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -3029,6 +3029,7 @@ body {
 body img {
   line-height: 0;
   vertical-align: bottom;
+  box-sizing: border-box;
 }
 body img::before, body img::after {
   clear: both;
@@ -3153,7 +3154,7 @@ body, p {
   font-family: "Source Serif Pro", serif;
   letter-spacing: 0.01em;
   font-weight: 400;
-  color: #79797c;
+  color: #555558;
 }
 
 p.large {
@@ -3309,14 +3310,14 @@ input, textarea {
 
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #79797c;
+  color: #555558;
   opacity: 1;
   /* Firefox */
 }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: #79797c;
+  color: #555558;
 }
 
 :focus {
@@ -3528,15 +3529,15 @@ input, textarea {
 }
 
 .bottom-border {
-  border-bottom: solid 1px #79797c;
+  border-bottom: solid 1px #555558;
 }
 
 .left-border {
-  border-left: solid 1px #79797c;
+  border-left: solid 1px #555558;
 }
 
 .right-border {
-  border-right: solid 1px #79797c;
+  border-right: solid 1px #555558;
 }
 
 .circled {

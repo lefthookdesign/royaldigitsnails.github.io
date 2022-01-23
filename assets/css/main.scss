@@ -14,7 +14,7 @@ $secondary-color: #243071;
 $accent-color: #FBD449;
 $light-grey-color: #F4F4F2;
 $dark-color: #141226;
-$grey-color: #79797c;
+$grey-color: #555558;
 $white-color: #ffffff;
 $no-shadow: 0px 0px 0px rgba($dark-color,0);
 $shadow: 0px 8px 20px rgba($dark-color,.1);
@@ -139,7 +139,8 @@ body {
     -webkit-font-smoothing: antialiased !important;
     img {
         line-height: 0;
-        vertical-align:bottom;}
+        vertical-align:bottom;
+      box-sizing: border-box;}
     img::before, img::after {
         clear: both;
     }

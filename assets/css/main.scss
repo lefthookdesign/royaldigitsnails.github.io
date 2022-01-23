@@ -45,6 +45,9 @@ $shadow-dark: 0px 16px 30px rgba($dark-color,.2);
 /* import grid */
 @import "flexboxgrid";
 
+ /* slick slider styling*/
+@import "slick";
+@import "slick-theme";
 
 /* mixins */
 @mixin primary-gradient {

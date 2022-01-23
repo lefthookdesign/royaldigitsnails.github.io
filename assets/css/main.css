@@ -3155,6 +3155,7 @@ body, p {
   letter-spacing: 0.01em;
   font-weight: 400;
   color: #555558;
+  margin: 0;
 }
 
 p.large {

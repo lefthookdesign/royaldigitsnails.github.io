@@ -3049,8 +3049,8 @@ body img::before, body img::after, html img::before, html img::after {
 }
 
 .bg-image {
-  background-size: cover;
-  background-position: center;
+  background-size: 117%;
+  background-position: right;
   background-attachment: scroll;
   background-repeat: no-repeat;
   z-index: 0;

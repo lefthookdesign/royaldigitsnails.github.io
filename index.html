@@ -462,15 +462,6 @@
   </div>
 </div>
 
-<script>
-$(window).scroll(function() {
-  if ($(window).scrollTop() >= $('#landing-hero').outerHeight()) {
-    $("#header").addClass("scrolled");
-  } else {
-    $("#header").removeClass("scrolled");
-  }
-});
-</script>
 
 <script>
 $(document).ready(function(){
@@ -496,6 +487,15 @@ $(document).ready(function(){
       });
     } // End if
   });
+
+  $(window).scroll(function() {
+    if ($(window).scrollTop() >= $('#landing-hero').outerHeight()) {
+      $("#header").addClass("scrolled");
+    } else {
+      $("#header").removeClass("scrolled");
+    }
+  });
+
 });
 </script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>

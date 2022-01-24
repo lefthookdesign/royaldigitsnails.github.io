@@ -159,8 +159,8 @@ body, html {
 }
 
 .bg-image {
-    background-size: 117%;
-    background-position: right;
+    background-size: cover;
+    background-position: center;
     background-attachment: scroll;
     background-repeat: no-repeat;
     z-index: 0;

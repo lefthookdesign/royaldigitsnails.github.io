@@ -137,6 +137,7 @@ body, html {
     overflow-x: hidden;
     overflow-y: scroll;
     -webkit-font-smoothing: antialiased !important;
+    scroll-behavior: smooth;
     img {
         line-height: 0;
         vertical-align:bottom;
@@ -290,22 +291,19 @@ i.material-icons {
 }
 
 /* nav bar */
-
 .nav {
     @include transition;
-    position: fixed;
     top: 0;
-    z-index: 2;
+    z-index: 100;
     height: auto;
     display: flex;
     justify-content: space-around;
     background:  rgba($white-color,0);
-
     a{
       @include transition;
       font-family: 'Raleway', sans-serif;
       letter-spacing: .02em;
-      font-size: 14px;
+      font-size: 16px;
       color: $white-color;
       padding: 5px 10px;
       background: rgba($white-color, 0);}
@@ -314,43 +312,91 @@ i.material-icons {
       color: $white-color !important;
       @include border-radius;
       background: rgba($white-color, .15);}
-    #logo-dark {
+    #logo-dark, #menu-dark {
       display: block;
     }
-    #logo-white {
+    #logo-white, #menu-white {
       display: none;
     }
     .logo{
         @include transition;
         width: 40px;
-        margin-right: 15px;
+    }
+    .header-bar{
+      padding:10px 0;
     }
 }
 .nav.scrolled {
-  #logo-dark {
-      display: none !important;
+  @include transition;
+  @include shadow;
+  background: rgba($white-color,.95);
+  a{
+    @include transition;
+    color: $secondary-color !important;
   }
-  #logo-white {
-      display: block !important;
+  a:hover{
+    @include transition;
+    color: $primary-color !important;
+  }
+  #logo-dark, #menu-dark {
+    display: none !important;
+  }
+  #logo-white, #menu-white {
+    display: block !important;
   }
 }
-
 .nav-link {
     padding: 8px 20px;
     margin: auto;
     text-transform: capitalize;
 }
-.scrolled {
-    @include transition;
-    @include shadow;
-    background: rgba($white-color,.95);
-    a{
+#nav {
+  transform: none;
+  position: fixed;
+  display: block;
+  height: auto;
+  top: 0px;
+  left: 0px;
+  z-index: 100000;
+  //width: 100%;
+}
+#nav-mobile {
+    position: fixed;
+    z-index: 100;
+    .link{
         @include transition;
-        color: $secondary-color !important;
+        display: inline-block;
+        font-size: 1.4em;
+        letter-spacing: 0.06em;
+        padding: $xs $sm;
+        opacity: 1;
+        border-bottom: none;
+        color: $white-color !important;
     }
-    a:hover{
+    a:hover {
         @include transition;
-        color: $primary-color !important;
+        color: $white-color !important;
+    }
+    #menu-list {
+      position: absolute;
+      display: block;
+      min-height: 100vh;
+      width: 100vw;
+      max-width: 600px;
+      @include transition;
+      @include shadow-dark;
+      top: -100vh;
+      left: 0;
+      opacity:0;
+      background: rgba($primary-color, 0.97);
+    }
+    .show-menu {
+      -webkit-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out;
+      position: relative;
+      top: 0 !important;
+      opacity: 1 !important;
+      z-index: 2;
     }
 }
 
@@ -773,9 +819,18 @@ opacity: 1; /* Firefox */
     display: none !important;
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 600px) {
     h1 {
         font-size: 2.8em !important;
+    }
+    #services h4 {
+      font-size: 1.25em;
+    }
+    #services h3 {
+      font-size: 1.5em;
+    }
+    p.large {
+      font-size: 18px;
     }
     .mobile-top-padding {
         padding-top: 60px;}
@@ -785,8 +840,14 @@ opacity: 1; /* Firefox */
     .show-for-small {
         display: block !important;
     }
+    .md-max-width {
+      width: 85vw;
+    }
+    #hero {
+      background-image: url('/assets/images/mobile-hero.jpg') !important;
+    }
 }
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 900px) {
     .nav .logo{
         margin: auto;
     }
@@ -797,7 +858,7 @@ opacity: 1; /* Firefox */
         display: none;
     }
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1200px) {
     h1 {
       font-size: 3.8em;
       }

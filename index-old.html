@@ -1,13 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- main -->
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon@32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon@16.png">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2F294D">
     <title>Royal Digits Nail Salon – Fort Jones, CA, Siskiyou County - Nails by Crystal Curry</title>
     <meta name="description" content="Royal Digits, a boutique nail salon located in Fort Jones, California. Offering quality manicure, pedicure, acrylic, and gel services to maintan healthy, beautiful nails.">
     <meta name="keywords" content="nail salon, manicure, pedicure, nails, acrylics, gel manicure, gel polish, nail tech, group manicures, group pedicures, etna, fort jones, scott valley, siskiyou county, northern california, nor cal, california">
@@ -20,24 +13,29 @@
     <meta name="twitter:description" content="Royal Digits, a boutique nail salon located in Fort Jones, California. Offering quality manicure, pedicure, acrylic, and gel services to maintan healthy, beautiful nails.">
     <meta name="twitter:image" content="/assets/images/social-share.jpg">
     <meta name="twitter:card" content="summary_large_image">
+    <!-- main -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon@32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon@16.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2F294D">
+    <link rel="manifest" href="/manifest.json">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152983432-1"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
+
       gtag('config', 'UA-152983432-1');
     </script>
-    <!-- styles -->
+    <!-- links & scripts -->
     <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-    <!-- js+other -->
     <script src="https://www.w3schools.com/lib/w3.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-
-    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -62,14 +60,28 @@
 </head>
 <body>
 
-<div id="nav" class="nav scrolled full-width center-align hide-for-small"></div>
-<div id="nav-mobile" class="nav scrolled full-width center-align show-for-small"></div>
-
-<div id="hero" class="full-width full-height bg-image" style="background-image: url('/assets/images/about-photo-9.jpg')">
+<div id="landing-hero" class="full-width full-height bg-image" style="background-image: url('/assets/images/about-photo-9.jpg')">
     <div class="row full-width full-height dark-overlay">
+        <div id="header" class="nav full-width centered-text">
+            <div class="max-width row middle-xs center-xs start-sm">
+              <div class="col-xs-12 col-sm-2 left-text">
+                <a href="/index.html">
+                  <img id="logo-white" class="logo full-width vertical-align" src="/assets/images/logo-small-icon-dark.png" />
+                  <img id="logo-dark" class="logo full-width vertical-align" src="/assets/images/logo-small-icon-white.png" />
+                </a>
+              </div>
+              <div class="col-xs-12 col-sm-10 center-xs end-sm">
+                <div class="sm inline nav-link"><a href="#about">About</a></div>
+                <div class="sm inline nav-link"><a href="#services">Services</a></div>
+                <div class="sm inline nav-link"><a href="#contact">Contact</a></div>
+              </div>
+            </div>
+        </div>
+
         <div class="row max-width full-height center-xs middle-xs white-color">
             <div class="col-xs-12 col-sm-12 max-width">
-                <h1 class="sm-padding no-margin white-color">Royal Digits Nails</h1>
+
+                <h1 class="sm-padding white-color">Royal Digits Nails</h1>
                 <p class="large md-padding lg-bottom-padding white-color">Manicures, pedicures, acrylics, gel services, and more.</p>
                 <a target="_blank" href="https://www.fresha.com/providers/royal-digits-ulgwgaiu">
                     <button type="button" class="white-button">Book an Appointment</button>
@@ -78,7 +90,6 @@
         </div>
     </div>
 </div>
-
 <div id="about" class="row center-xs section-padding">
     <div class="row max-width lg-bottom-padding start-xs">
         <div class="row middle-xs">
@@ -91,72 +102,103 @@
           <div class="col-xs-12 col-sm-5 sm-padding">
             <img class="full-width" src="/assets/images/about-photo-1.jpg" />
           </div>
+          <div class="slick-slider">
+            <div class="sm-padding">
+              <img class="full-width" src="/assets/images/about-photo-5.jpg" />
+            </div>
+            <div class="sm-padding">
+              <img class="full-width" src="/assets/images/about-photo-2.jpg" />
+            </div>
+            <div class="sm-padding">
+              <img class="full-width" src="/assets/images/about-photo-14.jpg" />
+            </div>
+            <div class="sm-padding">
+              <img class="full-width" src="/assets/images/about-photo-10.jpg" />
+            </div>
+            <div class="sm-padding">
+              <img class="full-width" src="/assets/images/royal-digits-streetview.jpg" />
+            </div>
+          </div>
         </div>
     </div>
 </div>
-
-<div class="row full-width light-grey-bg md-padding">
-    <div id="photo-slider" class="max-width slick-slider lg-top-padding">
+<!--<div class="row full-width light-grey-bg md-padding">
+    <div id="photo-slider" class="max-width slick-slider">
       <div class="slick-slide">
-        <div class="xs-padding">
+        <div>
         <img class="full-width" src="/assets/images/about-photo-2.jpg" />
         </div>
       </div>
       <div class="slick-slide">
-        <div class="xs-padding">
-        <img class="full-width" src="/assets/images/about-photo-5.jpg" />
-        </div>
-      </div>
-      <div class="slick-slide">
-        <div class="xs-padding">
-        <img class="full-width" src="/assets/images/about-photo-6.jpg" />
-        </div>
-      </div>
-      <div class="slick-slide">
-        <div class="xs-padding">
-        <img class="full-width" src="/assets/images/about-photo-7.jpg" />
-        </div>
-      </div>
-      <div class="slick-slide">
-        <div class="xs-padding">
-        <img class="full-width" src="/assets/images/about-photo-8.jpg" />
-        </div>
-      </div>
-      <div class="slick-slide">
-        <div class="xs-padding">
+        <div>
         <img class="full-width" src="/assets/images/about-photo-3.jpg" />
         </div>
       </div>
       <div class="slick-slide">
-        <div class="xs-padding">
+        <div>
+        <img class="full-width" src="/assets/images/about-photo-4.jpg" />
+        </div>
+      </div>
+      <div class="slick-slide">
+        <div>
+        <img class="full-width" src="/assets/images/about-photo-5.jpg" />
+        </div>
+      </div>
+      <div class="slick-slide">
+        <div>
+        <img class="full-width" src="/assets/images/about-photo-6.jpg" />
+        </div>
+      </div>
+      <div class="slick-slide">
+        <div>
+        <img class="full-width" src="/assets/images/about-photo-7.jpg" />
+        </div>
+      </div>
+      <div class="slick-slide">
+        <div>
+        <img class="full-width" src="/assets/images/about-photo-8.jpg" />
+        </div>
+      </div>
+      <div class="slick-slide">
+        <div>
+        <img class="full-width" src="/assets/images/about-photo-9.jpg" />
+        </div>
+      </div>
+      <div class="slick-slide">
+        <div>
+        <img class="full-width" src="/assets/images/about-photo-10.jpg" />
+        </div>
+      </div>
+      <div class="slick-slide">
+        <div>
         <img class="full-width" src="/assets/images/about-photo-11.jpg" />
         </div>
       </div>
       <div class="slick-slide">
-        <div class="xs-padding">
+        <div>
         <img class="full-width" src="/assets/images/about-photo-12.jpg" />
         </div>
       </div>
       <div class="slick-slide">
-        <div class="xs-padding">
+        <div>
         <img class="full-width" src="/assets/images/about-photo-13.jpg" />
         </div>
       </div>
       <div class="slick-slide">
-        <div class="xs-padding">
+        <div>
         <img class="full-width" src="/assets/images/about-photo-14.jpg" />
         </div>
       </div>
     </div>
-    <div id="slick-nav" class="row full-width middle center-xs md-top-padding">
+    <div id="slick-nav" class="row middle center-xs end-sm md-top-padding">
         <div class="pp inline-block">
-            <i class="material-icons secondary-color xs-padding large">navigate_before</i>
+            <i class="material-icons secondary-color xs-padding large opacity">navigate_before</i>
         </div>
         <div class="nn inline-block">
-            <i class="material-icons secondary-color xs-padding large">navigate_next</i>
+            <i class="material-icons secondary-color xs-padding large opacity">navigate_next</i>
         </div>
     </div>
-</div>
+</div>-->
 
 <div id="services" class="row center-xs xl-bottom-padding lg-top-padding white-bg">
     <div class="row md-max-width start-xs">
@@ -223,6 +265,7 @@
           <h3>$30</h3>
         </div>
       </div>
+
       <h5 class="bold md-padding light-grey-bg full-width grey-color uppercase">Gel Polish</h5>
       <div class="col-xs-12 row md-padding no-right-padding middle-xs">
         <div class="col-xs-6 col-sm-8">
@@ -314,6 +357,7 @@
           <h3>$50</h3>
         </div>
       </div>
+
       <h5 class="bold md-padding light-grey-bg full-width grey-color uppercase">Acrylics</h5>
       <div class="col-xs-12 row md-padding no-right-padding middle-xs">
         <div class="col-xs-6 col-sm-8">
@@ -394,22 +438,12 @@
 </div>
 
 <div id="contact" class="row center-xs section-padding white-bg">
-    <div class="row max-width start-xs bottom-xs center-xs start-sm">
-        <div class="col-xs-12 col-sm-6">
+    <div class="row max-width start-xs middle-xs center-xs start-sm">
+        <div class="col-xs-12 col-sm-6 lg-bottom-padding">
             <h2>Contact Us</h2>
-            <div class="row middle">
-              <i class="material-icons secondary-color xs-padding inline-block large">phone</i>
-              <p class="sm-left-padding inline-block primary-color">Call or text <a href="tel:530-340-1753">530-340-1753</a></p>
-            </div>
-            <div class="row top">
-              <i class="material-icons secondary-color xs-padding inline-block large">place</i>
-              <p class="no-top-padding sm-left-padding primary-color"><a href="https://goo.gl/maps/LNkfnyEn2EFUvGLm6" target="_blank">11959 Main Street, Suite A <br/>Fort Jones, CA 96032</a></p>
-            </div>
-            <div class="light-grey-bg md-padding" style="margin-right:20px;">
-              <img class="full-width" src="assets/images/royal-digits-streetview.jpg"/>
-            </div>
-
-
+            <p>11959 Main Street, Suite A <br/>Fort Jones, CA 96032</p>
+            <p>Call or text.<br/>
+            <a href="tel:530-340-1753">530-340-1753</a></p>
         </div>
         <div class="col-xs-12 col-sm-6">
           <div class="mapouter">
@@ -418,9 +452,14 @@
             </div>
           </div>
         </div>
+        <div class="col-xs-12 col-sm-6">
+
+        </div>
+        <div class="col-xs-12 col-sm-6">
+
+        </div>
     </div>
 </div>
-
 <div class="footer section-padding">
   <div class="row max-width center-xs middle-xs">
     <div class="col-xs-12">
@@ -440,31 +479,57 @@
   </div>
 </div>
 
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
 <script src="/assets/js/main.js"></script>
+
 <script>
 $(document).ready(function() {
   // Setup Page Contents
   initPage();
 
+  //slick slider initialization
+  $('#photo-slider').slick({
+    accessibility: true,
+    autoplay: true,
+    infinite: true,
+    centerMode: true,
+    variableWidth: true,
+    autoplaySpeed: 800,
+    fade: true,
+    cssEase: 'linear',
+    arrows: true,
+    prevArrow: ".pp",
+    nextArrow: ".nn",
+    dots: false,
+    slidesToShow: 3,
+    slidesToScroll: 1
+  });
+
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
 });
 </script>
-
-<script>
-//slick slider initialization
-$('#photo-slider').slick({
-  prevArrow: ".pp",
-  nextArrow: ".nn",
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  accessibility: true,
-  autoplay: true,
-  infinite: true,
-  centerMode: true,
-  autoplaySpeed: 3200,
-  cssEase: 'linear',
-  touchMove: 'true',
-});
-</script>
-
 </body>
 </html>

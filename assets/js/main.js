@@ -1,32 +1,23 @@
 function initPage() {
+  $("#nav").load("closet/nav.html");
+  $("#nav-mobile").load("closet/nav-mobile.html");
+
   $(window).scroll(function() {
-    if ($(window).scrollTop() >= $('#landing-hero').outerHeight() - 100) {
-      $("#header").addClass("scrolled");
+    if ($(window).scrollTop() > $('#hero').outerHeight() - 200) {
+      print = "scroll success";
+      $(".nav").addClass("scrolled");
     } else {
-      $("#header").removeClass("scrolled");
+      $(".nav").removeClass("scrolled");
     }
   });
 }
-$(document).ready(function() {
+//mobile navigation menus
+function menuList() {
+  var element = document.getElementById("menu-list");
+  element.classList.toggle("show-menu");
+}
 
-    /* Every time the window is scrolled ... */
-    $(window).scroll( function(){
-
-        /* Check the location of each desired element */
-        $('.fade-in').each( function(i){
-
-            var bottom_of_object = $(this).position().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-            /* If the object is completely visible in the window, fade it it */
-            if( bottom_of_window > bottom_of_object ){
-
-                $(this).animate({'opacity':'1'},1500);
-
-            }
-
-        });
-
-    });
-
-});
+function closeMenu() {
+  var element = document.getElementById("menu-list");
+  element.classList.toggle("show-menu");
+}

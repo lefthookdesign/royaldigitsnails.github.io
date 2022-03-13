@@ -15,7 +15,7 @@ $flexboxgrid-outer-margin: 0 !default;
 // name SIZErem,
 $flexboxgrid-breakpoints:
   //xs 30em 31rem,
-  xs 40em 41rem,
+  xs 30em 31rem,
   sm 62em 61rem,
   md 75em 71rem,
   lg 90em 86rem !default;
@@ -59,7 +59,7 @@ $half-gutter-width: $flexboxgrid-gutter-width * .5;
 
 @mixin flexboxgrid-sass-col-common {
   box-sizing: border-box;
-  
+
   // split @include flex(0, 0, auto) into individual props
   @include flex-grow(0);
   @include flex-shrink(0);
@@ -80,8 +80,8 @@ $name: xs;
 @for $i from 1 through $flexboxgrid-grid-columns {
   .col-#{$name}-#{$i} {
     @include flexboxgrid-sass-col-common;
-    @include flex-basis(100% / $flexboxgrid-grid-columns * $i);
-    max-width: 100% / $flexboxgrid-grid-columns * $i;
+    @include flex-basis(calc(100% / $flexboxgrid-grid-columns * $i));
+    max-width: calc(100% / $flexboxgrid-grid-columns * $i);
   }
 }
 @for $i from 0 through $flexboxgrid-grid-columns {
@@ -90,7 +90,7 @@ $name: xs;
     @if $i == 0 {
       margin-left: 0;
     } @else {
-      margin-left: 100% / $flexboxgrid-grid-columns * $i;
+      margin-left: calc(100% / $flexboxgrid-grid-columns * $i);
     }
   }
 }
@@ -161,8 +161,8 @@ $name: xs;
     @for $i from 1 through $flexboxgrid-grid-columns {
       .col-#{$name}-#{$i} {
         @include flexboxgrid-sass-col-common;
-        @include flex-basis(100% / $flexboxgrid-grid-columns * $i);
-        max-width: 100% / $flexboxgrid-grid-columns * $i;
+        @include flex-basis(calc(100% / $flexboxgrid-grid-columns * $i));
+        max-width: calc(100% / $flexboxgrid-grid-columns * $i);
       }
     }
     @for $i from 0 through $flexboxgrid-grid-columns {
@@ -171,7 +171,7 @@ $name: xs;
         @if $i == 0 {
           margin-left: 0;
         } @else {
-          margin-left: 100% / $flexboxgrid-grid-columns * $i;
+          margin-left: calc(100% / $flexboxgrid-grid-columns * $i);
         }
       }
     }
@@ -198,7 +198,7 @@ $name: xs;
     .top {
       @include align-items(flex-start);
     }
-    
+
     .top-#{$name} {
       @include align-items(flex-start);
     }
@@ -206,7 +206,7 @@ $name: xs;
     .middle {
       @include align-items(center);
     }
-    
+
     .middle-#{$name} {
       @include align-items(center);
     }
@@ -214,7 +214,7 @@ $name: xs;
     .bottom-#{$name} {
       @include align-items(flex-end);
     }
-    
+
     .bottom {
       @include align-items(flex-end);
     }
@@ -234,7 +234,7 @@ $name: xs;
     .last-#{$name} {
       order: 1;
     }
-    
+
     .hide-on-#{$name} {
       display: none;
     }

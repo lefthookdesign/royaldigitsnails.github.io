@@ -3149,7 +3149,7 @@ h5 {
 }
 
 body {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.5;
   padding: 0;
   font-family: "Source Serif Pro", serif;
@@ -3481,14 +3481,14 @@ input, textarea {
   border: none;
   top: 0;
   cursor: pointer;
-  font-weight: 800;
-  font-size: 0.8em;
+  font-weight: bold;
+  font-size: 0.65em;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
-  color: #2F294D !important;
+  color: #141226 !important;
   text-align: center !important;
 }
 
@@ -3945,6 +3945,17 @@ input, textarea {
   #hero {
     background-image: url("/assets/images/mobile-hero.jpg") !important;
   }
+
+  .section-padding {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  /* instagram posts responsive 
+  .responsives-grid-item {
+    width: 100%;
+    padding: 40px;
+  }*/
 }
 @media only screen and (max-width: 900px) {
   .nav .logo {

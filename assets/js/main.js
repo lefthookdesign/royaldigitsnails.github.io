@@ -4,7 +4,6 @@ function initPage() {
 
   $(window).scroll(function() {
     if ($(window).scrollTop() > $('#hero').outerHeight() - 200) {
-      print = "scroll success";
       $(".nav").addClass("scrolled");
     } else {
       $(".nav").removeClass("scrolled");
